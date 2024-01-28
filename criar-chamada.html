@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Script de trasmissão</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1 class="title">Script de trasmissão</h1>
+    <p id="notification" hidden></p>
+    <div class="entry-modal" id="entry-modal">
+        <p>Criar ou Participar de uma Reunião</p>
+        <input id="room-input" class="room-input" placeholder="Digite o ID da Sala">
+        <div>
+            <button onclick="createRoom()">Criar Sala</button>
+        </div>
+    </div>
+    <div class="meet-area">
+        <!-- Elemento de Vídeo Remoto quem entrar entrando na sala -->
+        <video id="remote-video"></video>
+
+        <!-- Local Video Element camera de quem criou a sala-->
+
+        <video id="local-video"></video>
+    </div>
+</body>
+
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="script.js"></script>
+
+</html>

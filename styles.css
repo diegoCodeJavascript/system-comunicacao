@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    background-color: #444444;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+#notification {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    top: 47.33px;
+    font-size: 18pt;
+    width: 100%;
+    background-color: orange;
+}
+
+.entry-modal {
+    border: 1px solid #444444;
+    width: 300px;
+    margin: auto;
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 70;
+    margin-left: -150px;
+    padding: 5px;
+    color: #fff;
+    background-color: #444444;
+    text-align: center;
+}
+
+.meet-controls-bar {
+    bottom: 0;
+    background-color: black;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#local-video-container,
+#remote-video-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#local-video-container {
+    left: 15px;
+}
+
+#remote-video-container {
+    right: 15px;
+}
+
+#local-video,
+#remote-video {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 15px solid;
+    border-color: green;
+    background-color: #444444;
+}
+
+#local-video-container h2 {
+    margin-bottom: 10px;
+    color: white;
+}
